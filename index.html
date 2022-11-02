@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="description" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    const img = new Image(100, 200); // width, height
+    img.src = "https://picsum.photos/200/301";
     <script> 
         function compararStrings(a, b) {
             const string1 = 'palabra1';
@@ -26,7 +28,7 @@
     <p>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <input name="botonxd"
-            type="button" value="Probar" onclick="compararStrings(palabra1.value, palabra2.value)"/>
+            type="button" value="Probar" onclick="compararStrings(palabra1.value, palabra2.value) && document.body.appendChild(img)"/>
     </p>
     <p>This is a regular paragraph</p>
 </body>
