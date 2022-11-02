@@ -10,7 +10,7 @@
         function compararStrings(a, b) {
             const string1 = 'palabra1';
             const string2 = 'palabra2';
-            alert(string1 == a && string2 == b);
+            return (string1 == a && string2 == b);
         }
         
         function cargarImagen() {
@@ -19,28 +19,24 @@
             'src',
             'http://bobbyhadz.com/images/blog/javascript-show-div-on-select-option/banner.webp',
             );
-            image.setAttribute('alt', 'nature');
-            image.setAttribute('height', 350);
-            image.setAttribute('width', 550);
-            image.style.border = '5px solid yellow';
             const box = document.getElementById('box');
             box.appendChild(image);
         }
     </script>
 </head>
 <body>
-    <h1>Heading</h1>
+    <h1>Prueba de palabras</h1>
     <title></title>
-    <h2>Palabra 1<input id="palabra1" maxlength="50" name="palabra1" required="required" size="50" type="text" /></h2>
+    <h2>User<input id="palabra1" maxlength="50" name="palabra1" required="required" size="50" type="text" /></h2>
 
     <h2>&nbsp;</h2>
 
-    <h2>Palabra 2<input id="palabra2" maxlength="50" name="palabra2" required="required" size="50" type="text" /></h2>
+    <h2>Password<input id="palabra2" maxlength="50" name="palabra2" required="required" size="50" type="text" /></h2>
 
     <p>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <input name="botonxd"
-            type="button" value="Probar" onclick="compararStrings(palabra1.value, palabra2.value) && cargarImagen()"/>
+            type="button" value="Connect" onclick="compararStrings(palabra1.value, palabra2.value) && cargarImagen()"/>
     </p>
     <div id="box"></div>
 </body>
