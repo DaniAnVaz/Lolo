@@ -8,10 +8,11 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="hash.js"></script>
     <script> 
-        function compararStrings(a, b) {
-            const string1 = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918';
-            const string2 = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918';
-            return (string1 == CryptoJS.SHA256(a).toString() && string2 == CryptoJS.SHA256(b).toString());
+        function compararStrings(a, b, c) {
+            const string1 = '3d37d829b4fdb575ca101989331b4d70bcb2c609a17729b072e7e96b7f42a6e1';
+            const string2 = 'b573e02cbf06d59be72eeb18e360e31ca97cedc32c54647fd0b0d1db814b3ea8';
+            const string3 = '98f00c1969b8c6f0e7c0355814f9531e301c8397f944941190889e4327bfd0b7';
+            return (string1 == CryptoJS.SHA256(a).toString() && string2 == CryptoJS.SHA256(b).toString() && string3 == CryptoJS.SHA256(c).toString());
         }
         
         function cargarImagen() {
